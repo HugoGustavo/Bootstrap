@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap 101 Template </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com//jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="container" style="padding: 100px 50px 10px;">
+          <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="left" data-content="Some content in Popover on left">
+              Popover on left
+          </button>
+          <button type="button" class="btn btn-primary" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="Some content in Popover on top">
+              Popover on top
+          </button>
+          <button type="button" class="btn btn-success" title="Popover title" data-container="body" data-toggle="popover" data-placement="right" data-content="Some content in Popover on right">
+              Popover on bottom
+          </button>
+          <button type="button" class="btn btn-warning" title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Some content in Popover on bottom">
+              Popover on right
+          </button>
+      </div>
+      <script>
+          $(function(){
+              $("[data-toggle='popover']").popover();
+          });
+      </script>
+    </body>
+</html>
+
+<!-- 
+style = "background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"
+-->
